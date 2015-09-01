@@ -1,17 +1,13 @@
-Title: Kirby Starterkit
+Title: Multi Entry
 
 ----
 
-Author: Bastian Allgeier GmbH
+Author: Christina Xu
 
 ----
 
-Description: This is Kirby's Starterkit.
+Description: A multimedia collection of stories, interviews, and guides that vibrantly portrays the lives and worlds of young Chinese creatives.
 
 ----
 
-Keywords: Kirby, CMS, file-based
-
-----
-
-Copyright: © 2009-(date: Year) (link: http://getkirby.com text: Kirby)
+Keywords: China
