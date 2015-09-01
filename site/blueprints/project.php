@@ -9,11 +9,11 @@ fields:
     label: Title
     type:  text
   year:
-    label: Year
+    label: Date
+    type:  date
+  link:
+    label: External link
     type:  text
-  text:
-    label: Text
-    type:  textarea
   tags:
     label: Tags
     type:  tags
