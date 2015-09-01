@@ -1,41 +1,10 @@
-/*
 
-Kirby Starterkit
-
-Author: Bastian Allgeier / Sascha Lack
-URL:    http://getkirby.com
-Email:  support@getkirby.com
-
-*/
-
-
-/* Source Sans Pro
+/* Colors
 -------------------------------------------------- */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 300;
-  src: url(../fonts/sourcesanspro-300.woff) format('woff');
-}
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/sourcesanspro-400.woff) format('woff');
-}
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 600;
-  src: url(../fonts/sourcesanspro-600.woff) format('woff');
-}
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: italic;
-  font-weight: 400;
-  src: url(../fonts/sourcesanspro-400-italic.woff) format('woff');
-}
-
+$lightgray: #EDF4F8;
+$green: #65F496;
+$red: #BA0913;
+$white: #FFFFFF;
 
 /* Reset
 -------------------------------------------------- */
@@ -51,7 +20,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, main, nav, section, summary {
   display: block;
 }
-
 
 /* Pix
 -------------------------------------------------- */
@@ -86,9 +54,7 @@ a:hover {
 -------------------------------------------------- */
 html {
   height: 101%;
-  font-family: "Source Sans Pro", sans-serif;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+  font-family: "Montserrat", sans-serif;
 }
 body {
   margin: 0 auto;
@@ -96,7 +62,7 @@ body {
   line-height: 1.5em;
   padding: 1.5em;
   max-width: 50em;
-  background: #fff;
+  background: $white;
   color: #222;
 }
 
@@ -104,30 +70,39 @@ body {
 /* Header
 -------------------------------------------------- */
 .header {
-  border-bottom: 2px solid red;
-  margin-bottom: 1.5em;
+  font-family: "Oswald", sans-serif!important;
+  padding-bottom: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  background:$lightgray;
 }
-.logo {
-  display: block;
-  margin-bottom: 1.5em;
+.red {
+  color: $red;
 }
-.logo img {
-  width: 2em;
+.green {
+  color: $green;
 }
-
+h1 a:hover .green {
+  text-decoration:underline;
+}
 
 /* Navigation
 -------------------------------------------------- */
+.menu {
+  background:$red;
+}
 .menu a {
+  font-size:18px;
   display: block;
-  color: #222;
+  color: $white;
+  background:none;
 }
 .menu a:hover {
-  color: red;
+  color: $green;
   text-decoration: none;
 }
-.menu .active {
-  color: red;
+.menu .active, .is-checked {
+  color: $green!important;
 }
 .menu li {
   list-style: none;
@@ -138,7 +113,7 @@ body {
 .menu > li > a {
   padding: .35em 0;
   border-top: 1px solid #ddd;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .submenu {
@@ -177,13 +152,6 @@ body {
   body {
     padding: 3em;
   }
-  .logo {
-    float: left;
-  }
-  .menu {
-    float: right;
-    margin-right: -1em;
-  }
   .menu > li {
     float: left;
   }
@@ -200,10 +168,10 @@ body {
 /* Headings
 -------------------------------------------------- */
 h1 {
-  font-size: 2em;
+  font-size: 2.5em;
   line-height: 1.25em;
-  font-weight: 400;
-  margin-bottom: .5em;
+  font-weight: bold;
+  margin:.5em 0;
 }
 h2 {
   font-size: 2em;
@@ -229,14 +197,24 @@ h1 a, h2 a, h3 a, h4 a {
   color: inherit;
   border: 0 !important;
 }
+.text h1, .text h2 {
+  font-family:Oswald, sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 1.25em;
+  margin-top:0;
+}
 
-
-
+@media screen and (min-width: 40em) {
+  h1 {
+      font-size: 4em;
+  }
+}
 /* Main
 -------------------------------------------------- */
 .main {
   padding-bottom: 1.5em;
-  border-bottom: 2px solid red;
+  background:$lightgray;
 }
 .main hr {
   margin: 3em 0;
@@ -257,9 +235,11 @@ h1 a, h2 a, h3 a, h4 a {
 }
 
 /* Text blocks */
+.text,
 .text ul,
 .text ol {
-  margin-left: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 /* Project meta
@@ -280,23 +260,22 @@ h1 a, h2 a, h3 a, h4 a {
 }
 
 
-/* Project teaser
+/* Project grid
 -------------------------------------------------- */
-.teaser {
+.grid {
   list-style: none;
+  margin-top:4em;
 }
-.teaser li {
+.grid li {
   margin-bottom: 1.5em;
   list-style: none;
+  min-height:265px;
 }
 @media screen and (min-width: 50em) {
-  .teaser li {
+  .grid li {
     float: left;
     width: 30%;
-    margin-left: 5%;
-  }
-  .teaser li:first-child {
-    margin-left: 0;
+    margin-left: 2.5%;
   }
 }
 
