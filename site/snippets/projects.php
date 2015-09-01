@@ -1,15 +1,12 @@
-<h2>Latest projects</h2>
-
-<ul class="teaser cf">
-  <?php foreach(page('projects')->children()->visible()->limit(3) as $project): ?>
+<ul class="grid cf">
+  <?php foreach(page('home')->children()->visible() as $project): ?>
   <li>
-    <h3><a href="<?php echo $project->url() ?>"><?php echo $project->title()->html() ?></a></h3>
-    <p><?php echo $project->text()->excerpt(80) ?> <a href="<?php echo $project->url() ?>">read&nbsp;more&nbsp;→</a></p>
     <?php if($image = $project->images()->sortBy('sort', 'asc')->first()): ?>
-    <a href="<?php echo $project->url() ?>">
+    <a href="<?php echo $project->link() ?>">
       <img src="<?php echo $image->url() ?>" alt="<?php echo $project->title()->html() ?>" >
     </a>
     <?php endif ?>
+    <p><a href="<?php echo $project->link() ?>"><?php echo $project->title()->html() ?></a></p>
   </li>
   <?php endforeach ?>
 </ul>
