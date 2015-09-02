@@ -32,12 +32,13 @@ img {
 /* Links
 -------------------------------------------------- */
 a {
-  color: #000;
+  color: black;
+  background-color: $green;
   text-decoration: none;
   transition: color .3s, background .3s, border .3s;
 }
 a:hover {
-  color: red;
+  color: $white;
 }
 
 
@@ -60,9 +61,8 @@ body {
   margin: 0 auto;
   font-size: 1.25em;
   line-height: 1.5em;
-  padding: 1.5em;
   max-width: 50em;
-  background: $white;
+  background: $lightgray;
   color: #222;
 }
 
@@ -82,7 +82,10 @@ body {
 .green {
   color: $green;
 }
-h1 a:hover .green {
+h1 a {
+  background-color: $lightgray;
+}
+h1 a:hover .red {
   text-decoration:underline;
 }
 
@@ -150,7 +153,7 @@ h1 a:hover .green {
 
 @media screen and (min-width: 40em) {
   body {
-    padding: 3em;
+  /*  padding: 3em; */
   }
   .menu > li {
     float: left;
@@ -169,7 +172,7 @@ h1 a:hover .green {
 -------------------------------------------------- */
 h1 {
   font-size: 2.5em;
-  line-height: 1.25em;
+  line-height: 1em;
   font-weight: bold;
   margin:.5em 0;
 }
@@ -207,7 +210,7 @@ h1 a, h2 a, h3 a, h4 a {
 
 @media screen and (min-width: 40em) {
   h1 {
-      font-size: 4em;
+      font-size: 5em;
   }
 }
 /* Main
@@ -225,10 +228,11 @@ h1 a, h2 a, h3 a, h4 a {
 .main figure,
 .main ul,
 .main ol {
-  margin-bottom: 1.5em;
+/*  margin-bottom: 1.5em; */
 }
 .main a {
-  border-bottom: 2px solid #ddd;
+  color: $black;
+/*  border-bottom: 2px solid #ddd; */
 }
 .main a:hover {
   border-color: #222;
@@ -245,7 +249,7 @@ h1 a, h2 a, h3 a, h4 a {
 /* Project meta
 -------------------------------------------------- */
 .meta {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5em; 
 }
 .meta li {
   float: left;
@@ -270,6 +274,16 @@ h1 a, h2 a, h3 a, h4 a {
   margin-bottom: 1.5em;
   list-style: none;
   min-height:265px;
+  position: relative;
+}
+
+.grid li p {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background-color: $green;
+  padding:0.5em;
+  opacity: 0.8;
 }
 @media screen and (min-width: 50em) {
   .grid li {
@@ -309,6 +323,6 @@ h1 a, h2 a, h3 a, h4 a {
   float: right;
 }
 .colophon a b {
-  color: red;
+  color: $red;
   padding-left: .25em;
 }

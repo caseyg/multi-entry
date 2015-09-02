@@ -1,13 +1,12 @@
   <footer class="footer cf" role="contentinfo">
-
-<!--     
-		<div class="copyright">
-      <?php echo $site->copyright()->kirbytext() ?>
+    
+	<div class="copyright">
+      <p>Multi Entry is made by <a href="http://www.christinaxu.org">Christina Xu</a>.</p>
     </div>
     <div class="colophon">
-      <a href="http://getkirby.com/made-with-kirby-and-love">Made with Kirby and <b>♥</b></a>
+      The site is made with <a href="http://getkirby.com/made-with-kirby-and-love">Kirby</a> and <b>♥</b> by <a href="http://caseyagollan.com/">CaseyG</a>
     </div>
--->
+
   </footer>
   <script>
 		function getHashFilter() {

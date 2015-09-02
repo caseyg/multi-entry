@@ -17,11 +17,12 @@
 
     </li>
     <?php endforeach ?>
-    <li><a href="/#filter=*" data-filter="*">show all</a></li>
-    <li><a href="/#filter=.metal" data-filter=".metal">metal</a></li>
-    <li><a href="/#filter=.transition" data-filter=".transition">transition</a></li>
-    <li><a href="/#filter=.alkali, .alkaline-earth" data-filter=".alkali, .alkaline-earth">alkali & alkaline-earth</a></li>
-    <li><a href="/#filter=:not(.transition)" data-filter=":not(.transition)">not transition</a></li>
+    <li><a href="/#filter=*" data-filter="*">all</a></li>
+    <li><a href="/#filter=.games" data-filter=".games">games</a></li>
+    <li><a href="/#filter=.fashion" data-filter=".fashion">fashion</a></li>
+    <li><a href="/#filter=.music" data-filter=".music">music</a></li>
+    <li><a href="/#filter=.tech" data-filter=".tech">tech</a></li>
+    <li><a href="/#filter=.internets" data-filter=".internets">internets</a></li>
   </ul>
 
 </nav>

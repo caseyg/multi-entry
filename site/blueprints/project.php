@@ -17,3 +17,6 @@ fields:
   tags:
     label: Tags
     type:  tags
+  sitename:
+    label:  Hosted On
+    type:   text
