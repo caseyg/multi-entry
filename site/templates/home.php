@@ -2,7 +2,7 @@
 
   <main class="main" role="main">
 
-    <div class="text">
+    <div class="subhead">
       <?php echo $site->description()->html() ?>
     </div>
 
