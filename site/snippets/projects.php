@@ -1,7 +1,12 @@
 
 <ul class="grid cf">
   <?php foreach(page('home')->children()->visible() as $project): ?>
-  <li>
+  <?php 
+      $tags=($project->tags());
+      $tags=explode(',',$tags);
+      $tags=array_map('trim',$tags);
+  ?> 
+  <li class="<?php foreach($tags as $tag): ?><?php echo html($tag) ?> <?php endforeach ?>">
     <?php if($image = $project->images()->sortBy('sort', 'asc')->first()): ?>
     <a href="<?php echo $project->link() ?>">
       <img src="<?php echo $image->url() ?>" alt="<?php echo $project->title()->html() ?>" >
