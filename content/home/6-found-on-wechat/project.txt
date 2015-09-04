@@ -14,4 +14,4 @@ Tags: video,internets
 
 ----
 
-Sitename: Vine
+Category: curation

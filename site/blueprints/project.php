@@ -17,6 +17,11 @@ fields:
   tags:
     label: Tags
     type:  tags
-  sitename:
-    label:  Hosted On
-    type:   text
+  category:
+    label: Category
+    type: select
+    default: writing
+    options:
+      writing: Writing
+      photography: Photography
+      curation: Curation

@@ -14,4 +14,4 @@ Tags: photos,fashion
 
 ----
 
-Sitename: Pinterest
+Category: curation
