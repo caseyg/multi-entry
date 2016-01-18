@@ -23,6 +23,7 @@
     <li><a href="/#filter=.music" data-filter=".music">music</a></li>
     <li><a href="/#filter=.tech" data-filter=".tech">tech</a></li>
     <li><a href="/#filter=.internets" data-filter=".internets">internets</a></li>
+    <li><a href="/#filter=.art" data-filter=".internets">art</a></li>
   </ul>
 
 </nav>
