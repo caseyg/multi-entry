@@ -11,8 +11,8 @@
     <li><a href="/#filter=.tech" data-filter=".tech">tech</a></li>
     <li><a href="/#filter=.internets" data-filter=".internets">internets</a></li>
     <li><a href="/#filter=.art" data-filter=".internets">art</a></li>-->
-  </ul>
-  <ul class="menu right-align">
+  <!--</ul>
+  <ul class="menu right-align">-->
     <?php foreach($pages->visible() as $p): ?>
     <li>
       <a <?php e($p->isOpen(), ' class="active"') ?> href="<?php echo $p->url() ?>"><?php echo $p->title()->html() ?></a>
